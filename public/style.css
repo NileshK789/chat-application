@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-size:auto;
+    animation: changeBackground 10s infinite;
+    padding: 0;
+    background-image: url(https://img.freepik.com/free-vector/work-chat-concept-illustration_114360-1268.jpg?w=996&t=st=1690890517~exp=1690891117~hmac=5063458b9d10d3057036efc27308c49e79089883f7826cc8d01fc79262ac4b3a);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+  }
+  
+  
+  h1 {
+    text-align: center;
+   
+    animation: heartbeat 1s infinite;
+  }
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  #chat-window {
+    margin: 10px;
+    height: 300px;
+    border: 3px solid #d51111;
+    overflow-y: auto;
+    padding: 5px;
+  }
+  
+  #chat-messages {
+    margin-bottom: 10px;
+    color: #d67f1b;
+    animation: typingText 3s steps(40) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  @keyframes typingText {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    height: 50px;
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+    background-color: #11d576;
+    border-radius: 5px;
+   cursor: pointer;
+   
+  overflow: hidden;
+  position: relative;
+  }
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cf9612;
+    backface-visibility: hidden;
+    color: #fff;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+   
+  }
+  
+  button:hover::before {
+    transform: scaleX(1);
+    content: "SEND";
+   padding: 15px 4px;
+  }
+  @keyframes changeBackground {
+    10%{
+     background-image: url(https://img.freepik.com/free-vector/online-world-concept-illustration_114360-2212.jpg?t=st=1690890287~exp=1690890887~hmac=fceff7e04c517109a76a92fc0ae2dbad417f4d50ff566703dfa8b32c92e0393b);
+    }
+    20%{
+      background-image: url(https://img.freepik.com/free-vector/cute-bot-say-users-hello-chatbot-greets-online-consultation_80328-195.jpg?t=st=1690890287~exp=1690890887~hmac=98cc230f8e63559e7208693da3b5f26afd3accdff9e648c6d9f9703bbc142708);
+    }
+    30%{
+      background-image: url(https://img.freepik.com/free-vector/chat-bot-concept-illustration_114360-5522.jpg?w=996&t=st=1690891228~exp=1690891828~hmac=d1e8176e3b696ea978b8a45b98d861e236814c73e87deab7396e58f201a44716);
+    }
+    40%{
+      background-image: url(https://img.freepik.com/free-vector/messaging-fun-concept-illustration_114360-1870.jpg?w=996&t=st=1690891252~exp=1690891852~hmac=e33f080280db500cd04221f65e00f878712a941afe99a0bdfbea11d843db709c);
+    }
+    50%{
+      background-image: url(https://img.freepik.com/free-vector/messaging-fun-concept-illustration_114360-4123.jpg?t=st=1690891344~exp=1690891944~hmac=3add27a44628223333cf08278077ef701400f8c99e89cacd3924da55f9d0e97e);
+    }
+    60%{
+      background-image: url(https://img.freepik.com/free-vector/chat-box-with-emoji-messages_23-2148312341.jpg?t=st=1690891344~exp=1690891944~hmac=db50aef1db7661709a7f6f84fe22efd1f19516c26c8455eb4178b9edcf1f1da0);
+    }
+    70%{
+      background-image: url(https://img.freepik.com/free-photo/cute-text-messages-mobile-phone-screen-media-mix_53876-98453.jpg?t=st=1690891344~exp=1690891944~hmac=68bf6585341d076b0dd6b773f73f5b40483b44e3a04f362b5370e56b265e2843);
+    }
+    80%{
+      background-image: url(https://img.freepik.com/free-psd/3d-illustration-happy-man-waving-flag-success_1150-65961.jpg?w=1480&t=st=1690891506~exp=1690892106~hmac=62ba596067c7a6054abb6199854702c14c1602393290964c38088fbb63f0a50e);
+    }
+    90%{
+      background-image: url(https://img.freepik.com/free-vector/opinion-concept-illustration_114360-4723.jpg?t=st=1690891463~exp=1690892063~hmac=57f64df80388a3bb2f1f33eb2ccb5f6c0124bbc6122d8c170dd1ca6a0b8637a6)
+    }
+    
+
+  }
+  
+
+ 
+  
