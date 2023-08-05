@@ -1,4 +1,6 @@
 # chat-application
 
-Run the server in :
+Run the application:
+Open two terminal windows. In the first terminal, run the server:
+
 node server.js
